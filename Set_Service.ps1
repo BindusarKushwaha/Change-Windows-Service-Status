@@ -44,9 +44,9 @@ The purpose of this script is to Start, Stop, Enable, Disable Any Service in bul
 # Once Name is identified from second column, you can copy and paste that name in below command. By replacing IntuneManagementExtension with your service name.
 # Please make sure NOT to use Display Name column. This script only accepts Name (Second Column).
 
-$ServiceName="IntuneManagementExtension", "AppInfo"
-$ServiceStatus="Running", "Stopped"
-$ServiceStartUpType= "Automatic", "Automatic"
+$ServiceName="IntuneManagementExtension", "AppInfo" 
+$ServiceStatus="Running", "Stopped" #Can only accept "Paused","Stopped","Running"
+$ServiceStartUpType= "Automatic", "Automatic" #Can only accept "Automatic","Boot","Disabled","Manual","System"
 
 ###########################################
 
